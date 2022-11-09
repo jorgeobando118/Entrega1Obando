@@ -1,0 +1,6 @@
+setup.py
+mipaquiete.egg-info/PKG-INFO
+mipaquiete.egg-info/SOURCES.txt
+mipaquiete.egg-info/dependency_links.txt
+mipaquiete.egg-info/top_level.txt
+paquete/sumar.py
