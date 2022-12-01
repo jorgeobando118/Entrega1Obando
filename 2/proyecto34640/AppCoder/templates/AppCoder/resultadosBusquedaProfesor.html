@@ -1,0 +1,29 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+
+{% block titulo %}
+<h1 class="mb-5">RESULTADO DE LA BUSQUEDA</h1>
+{% endblock %}
+
+
+
+{% block contenido_que_cambia %}
+
+{% if Profesores %}
+<ul>
+    {% for profesor in Profesores %}
+        <li>{{profesor.nombre}}</li>
+        <li>{{profesor.apellido}}</li>
+        <br>
+    {% endfor %}
+</ul>
+
+{% else %}
+
+<p> NO HAY PROFESORES CON ESE NOMBRE</p>
+
+{% endif %}
+
+{% endblock %}

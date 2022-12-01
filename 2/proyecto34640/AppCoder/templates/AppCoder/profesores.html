@@ -1,0 +1,17 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5">PROFESORES</h1>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+
+
+<H1>Operaciones en profesores: </H1>
+<a class="btn btn-primary" href="{% url 'ingresarProfesor'  %}">AGREGAR PROFESOR</a>
+<BR></BR>
+<a class="btn btn-success" href="{% url 'buscarProfesor'  %}">BUSCAR PROFESOR</a>
+
+{% endblock %}
