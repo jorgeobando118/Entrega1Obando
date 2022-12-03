@@ -47,10 +47,10 @@ def profesores(request):
             profe.save()
             return render (request, "Appcoder/inicio.html", {"mensaje": "PROFESOR CREADO CORRECTAMENTE!!"})
     else:
-        formulario=ProfeForm()
+        form=ProfeForm()
 
 
-    return render (request, "AppCoder/profesores.html", {"form":formulario})
+    return render (request, "AppCoder/profesores.html", {"form":form})
 
 def ingresarProfesor(request):
     if request.method=="POST":
@@ -66,10 +66,10 @@ def ingresarProfesor(request):
             profe.save()
             return render (request, "Appcoder/inicio.html", {"mensaje": "PROFESOR CREADO CORRECTAMENTE!!"})
     else:
-        formulario=ProfeForm()
+        form=ProfeForm()
 
 
-    return render (request, "AppCoder/ingresarProfesor.html", {"form":formulario})
+    return render (request, "AppCoder/ingresarProfesor.html", {"form":form})
 
 
 def buscarProfesor(request):
@@ -100,10 +100,10 @@ def ingresarEstudiante(request):
             estudiante.save()
             return render (request, "Appcoder/inicio.html", {"mensaje": "ESTUDIANTE CREADO CORRECTAMENTE!!"})
     else:
-        formulario=EstudianteForm()
+        form=EstudianteForm()
 
 
-    return render (request, "AppCoder/ingresarEstudiante.html", {"form":formulario})                  
+    return render (request, "AppCoder/ingresarEstudiante.html", {"form":form})                  
 
 
 def buscarEstudiante(request):
@@ -130,9 +130,9 @@ def ingresarCurso(request):
             curso.save()
             return render (request, "Appcoder/inicio.html", {"mensaje": "CURSO CREADO CORRECTAMENTE!!"})
     else:
-        formulario=CursoForm()
+        form=CursoForm()
 
-    return render (request, "AppCoder/ingresarCurso.html", {"form":formulario})  
+    return render (request, "AppCoder/ingresarCurso.html", {"form":form})  
 
 def buscarCurso(request):
     return render(request, "Appcoder/buscarCurso.html")
